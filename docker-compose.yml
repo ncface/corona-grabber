@@ -1,0 +1,15 @@
+version: '3'
+services:
+  corona-grabber:
+    container_name: corona-grabber
+    build: .
+    volumes:
+      - corona-data:/data
+    #network_mode: host
+    #ports:
+    #  - "1880:1880"
+    #  - "5353:5353"
+    #  - "51826:51826"
+    #restart: always
+volumes:
+  corona-data:
