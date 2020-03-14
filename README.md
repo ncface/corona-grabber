@@ -11,4 +11,4 @@ docker-compose build && docker-compose up -d
 grabber runs
 
 ## Get Data:
-docker cp <containerId>:/data <target-dir>
+docker cp \<containerId\>:/data \<target-dir\>
