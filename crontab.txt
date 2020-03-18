@@ -1,1 +1,1 @@
-0,15,30,25 * * * * /script.sh >> /var/log/script.log
+0,15,30,45 * * * * /script.sh >> /var/log/script.log

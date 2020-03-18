@@ -10,6 +10,14 @@ services:
     #  - "1880:1880"
     #  - "5353:5353"
     #  - "51826:51826"
-    #restart: always
+    restart: always
+  lighttpd:
+    image: sebp/lighttpd
+    volumes:
+      - corona-data:/var/www/localhost/htdocs
+    ports:
+      - "90:80"
+    tty: true
+    restart: always
 volumes:
   corona-data:
